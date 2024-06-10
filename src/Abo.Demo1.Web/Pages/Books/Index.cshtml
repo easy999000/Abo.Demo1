@@ -1,0 +1,22 @@
+﻿@page
+@using Abo.Demo1.Localization
+@using Abo.Demo1.Web.Pages.Books
+@using Microsoft.Extensions.Localization
+@model IndexModel
+@inject IStringLocalizer<Demo1Resource> L
+@section scripts
+{
+    <abp-script src="/Pages/Books/Index.js" />
+
+}
+<uujjkk>
+    kk
+</uujjkk>
+<abp-card>
+    <abp-card-header>
+        <h2>@L["Books"]</h2>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="BooksTable"></abp-table>
+    </abp-card-body>
+</abp-card>
